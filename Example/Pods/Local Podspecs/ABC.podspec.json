@@ -1,6 +1,6 @@
 {
   "name": "ABC",
-  "version": "0.1.0.Binary",
+  "version": "0.1.0",
   "summary": "A short description of ABC.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/yufang01/ABC",
@@ -13,15 +13,10 @@
   },
   "source": {
     "git": "https://github.com/yufang01/ABC.git",
-    "tag": "0.1.0.Binary"
+    "tag": "0.1.0"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "prepare_command": "/bin/bash build_lib.sh",
-  "source_files": "Pod/Products/include/**",
-  "ios": {
-    "vendored_libraries": "Pod/Products/lib/*.a"
-  },
-  "public_header_files": "Pod/Products/include/*.h"
+  "source_files": "ABC/Classes/**/*"
 }
