@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		014250CEDB7A7C1A1FF586C4 /* Pods_ABC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610004278856F33E8FBF4961 /* Pods_ABC_Tests.framework */; };
+		37A291EA2908E086007C1DD7 /* placeholder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37A291E72908E086007C1DD7 /* placeholder.h */; };
+		37A291F02908E0C1007C1DD7 /* YFABC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A291EF2908E0C1007C1DD7 /* YFABC.m */; };
+		37A291F32908E13E007C1DD7 /* YFABC.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A291EE2908E0C1007C1DD7 /* YFABC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CBC9C703ED2BE30507724F3 /* Pods_ABC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEED85B8A92F48FE94051FA /* Pods_ABC_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -36,12 +39,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		37A291E32908E086007C1DD7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				37A291EA2908E086007C1DD7 /* placeholder.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		034CA2F403364DFC6CA30E18 /* Pods-ABC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC_Example.debug.xcconfig"; path = "Target Support Files/Pods-ABC_Example/Pods-ABC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		051DD1F53E8ABDB7B9996315 /* Pods-ABC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC_Tests.release.xcconfig"; path = "Target Support Files/Pods-ABC_Tests/Pods-ABC_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		15FD619A76602046C440C095 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		15FD619A76602046C440C095 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2266860FD68BAC26123A74DD /* Pods-ABC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC_Example.release.xcconfig"; path = "Target Support Files/Pods-ABC_Example/Pods-ABC_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5E6046BB119E5D3E86C19199 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		37A291E02908E040007C1DD7 /* ABC_Example copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ABC_Example copy-Info.plist"; path = "/Users/a58/ABC/Example/ABC_Example copy-Info.plist"; sourceTree = "<absolute>"; };
+		37A291E52908E086007C1DD7 /* libABCBinary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libABCBinary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A291E72908E086007C1DD7 /* placeholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = placeholder.h; sourceTree = "<group>"; };
+		37A291EE2908E0C1007C1DD7 /* YFABC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YFABC.h; path = ../../ABC/Classes/YFABC.h; sourceTree = "<group>"; };
+		37A291EF2908E0C1007C1DD7 /* YFABC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YFABC.m; path = ../../ABC/Classes/YFABC.m; sourceTree = "<group>"; };
+		5E6046BB119E5D3E86C19199 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ABC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,11 +86,18 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DFC0A6345C870B10621E97A /* Pods-ABC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ABC_Tests/Pods-ABC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A5424872E348A37DC63CEB72 /* ABC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ABC.podspec; path = ../ABC.podspec; sourceTree = "<group>"; };
+		A5424872E348A37DC63CEB72 /* ABC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ABC.podspec; path = ../ABC.podspec; sourceTree = "<group>"; };
 		CDEED85B8A92F48FE94051FA /* Pods_ABC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		37A291E22908E086007C1DD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F587195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,8 +131,17 @@
 				9DFC0A6345C870B10621E97A /* Pods-ABC_Tests.debug.xcconfig */,
 				051DD1F53E8ABDB7B9996315 /* Pods-ABC_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		37A291E62908E086007C1DD7 /* ABCBinary */ = {
+			isa = PBXGroup;
+			children = (
+				37A291EE2908E0C1007C1DD7 /* YFABC.h */,
+				37A291EF2908E0C1007C1DD7 /* YFABC.m */,
+				37A291E72908E086007C1DD7 /* placeholder.h */,
+			);
+			path = ABCBinary;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
@@ -113,9 +150,11 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for ABC */,
 				6003F5B5195388D20070C39A /* Tests */,
+				37A291E62908E086007C1DD7 /* ABCBinary */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				2197E1B501BAB2B056439768 /* Pods */,
+				37A291E02908E040007C1DD7 /* ABC_Example copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +163,7 @@
 			children = (
 				6003F58A195388D20070C39A /* ABC_Example.app */,
 				6003F5AE195388D20070C39A /* ABC_Tests.xctest */,
+				37A291E52908E086007C1DD7 /* libABCBinary.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,7 +239,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		37A291F12908E0FD007C1DD7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A291F32908E13E007C1DD7 /* YFABC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		37A291E42908E086007C1DD7 /* ABCBinary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37A291EB2908E086007C1DD7 /* Build configuration list for PBXNativeTarget "ABCBinary" */;
+			buildPhases = (
+				37A291F12908E0FD007C1DD7 /* Headers */,
+				37A291E12908E086007C1DD7 /* Sources */,
+				37A291E22908E086007C1DD7 /* Frameworks */,
+				37A291E32908E086007C1DD7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ABCBinary;
+			productName = ABCBinary;
+			productReference = 37A291E52908E086007C1DD7 /* libABCBinary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		6003F589195388D20070C39A /* ABC_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ABC_Example" */;
@@ -208,7 +277,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				E50E5356DE1E6173E3BAA37B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +316,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = yufang01;
 				TargetAttributes = {
+					37A291E42908E086007C1DD7 = {
+						CreatedOnToolsVersion = 13.3.1;
+						DevelopmentTeam = LD5FM774T7;
+						ProvisioningStyle = Automatic;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +331,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -268,6 +342,7 @@
 			targets = (
 				6003F589195388D20070C39A /* ABC_Example */,
 				6003F5AD195388D20070C39A /* ABC_Tests */,
+				37A291E42908E086007C1DD7 /* ABCBinary */,
 			);
 		};
 /* End PBXProject section */
@@ -317,24 +392,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E50E5356DE1E6173E3BAA37B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ABC_Example/Pods-ABC_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ABC/ABC.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ABC.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ABC_Example/Pods-ABC_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E9165A001F294A53E16D83A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,6 +417,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		37A291E12908E086007C1DD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A291F02908E0C1007C1DD7 /* YFABC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +481,81 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		37A291EC2908E086007C1DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LD5FM774T7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37A291ED2908E086007C1DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LD5FM774T7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -570,6 +710,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		37A291EB2908E086007C1DD7 /* Build configuration list for PBXNativeTarget "ABCBinary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37A291EC2908E086007C1DD7 /* Debug */,
+				37A291ED2908E086007C1DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "ABC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
